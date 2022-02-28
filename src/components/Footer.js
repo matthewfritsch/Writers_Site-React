@@ -3,7 +3,9 @@ import './styling.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='containers'>
+    <h4>Footer</h4>
+  </div>
   )
 }
 

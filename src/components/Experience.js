@@ -3,7 +3,9 @@ import './styling.css'
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <div className='containers'>
+      <h4>Experience</h4>
+    </div>
   )
 }
 

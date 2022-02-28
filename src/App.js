@@ -7,6 +7,10 @@ import Header from "./components/Header";
 import Publications from "./components/Publications";
 
 function App() {
+
+  // AOS init
+  // useEffect()
+
   return (
     <div className="App">
       <Header />

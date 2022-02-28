@@ -3,7 +3,9 @@ import './styling.css'
 
 const Publications = () => {
   return (
-    <div>Publications</div>
+    <div className='containers'>
+    <h4>Publications</h4>
+  </div>
   )
 }
 
