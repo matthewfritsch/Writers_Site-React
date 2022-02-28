@@ -2,7 +2,7 @@ import './styling.css'
 
 const About = () => {
   return (
-    <div className='token'>About</div>
+    <div className='containers'>About</div>
   )
 }
 
