@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+
+import customTheme from './theme.js';
 
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -12,13 +15,16 @@ function App() {
   // useEffect()
 
   return (
-    <div className="App">
-      <Header />
-      <Experience />
-      <Publications />
-      <About />
-      <Footer />
-    </div>
+    <ChakraProvider theme={customTheme}>
+      
+      <div className="App">
+        <Header />
+        <Experience />
+        <Publications />
+        <About />
+        <Footer />
+      </div>
+    </ChakraProvider>
   );
 }
 
