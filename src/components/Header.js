@@ -4,12 +4,12 @@ const Header = () => {
   let welcomeImg = require('../assets/welcome_man.png')
 
   return (
-    <Center my={50} display='flex' alignItems='center' justifyContent='center' marg>
+    <Center my={50} display='flex' alignItems='center' justifyContent='center'>
       <Image height={600} src={welcomeImg} fallback='https://via.placeholder.com/390x600'/>
 
-      <Box>
+      <Box borderLeft={20}>
          <Heading> hello, my name is blank </Heading>
-         <Text color="gray">lorem ipsum dolor sit amet</Text>
+         <Text letterSpacing={2} color="gray">lorem ipsum dolor sit amet</Text>
       </Box>
      </Center>
   )
