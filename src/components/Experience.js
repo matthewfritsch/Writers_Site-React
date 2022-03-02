@@ -1,29 +1,35 @@
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { Box, Center, Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import ExperienceBox from './ExperienceBox';
 
 const Experience = () => {
+
+  const tabListSize = 720;
+  const tabSize = tabListSize/3;
+
   return (
-    <div className='containers'>
+    <Center>
       {/* <h4>Experience</h4> */}
       <Tabs>
-        <TabList width={600}>
-          <Tab>One</Tab>
-          <Tab>Two</Tab>
-          <Tab>Three</Tab>
+        <TabList width={tabListSize}>
+          <Tab width={tabSize}>Past</Tab>
+          <Tab width={tabSize}>Current</Tab>
+          <Tab width={tabSize}>Future</Tab>
         </TabList>
 
-        <TabPanels>
+        <TabPanels minHeight={200}>
           <TabPanel>
-            <p>one!</p>
+            <ExperienceBox title='Software Engineer' workName='Stripe'/>
+            <ExperienceBox />
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+          <ExperienceBox title='Software Engineer' workName='Stripe'/>
           </TabPanel>
           <TabPanel>
-            <p>three!</p>
+          <ExperienceBox title='Software Engineer' workName='Stripe' workLink='stripe.com'/>
           </TabPanel>
         </TabPanels>
       </Tabs>
-    </div>
+    </Center>
   )
 }
 
