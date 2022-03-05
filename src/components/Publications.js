@@ -55,7 +55,7 @@ const completed = [
 const Publications = () => {
   return (
     <>
-      <Center mb={10}>
+      <Center my={10}>
         <Heading>projects</Heading>
       </Center>
       <PubSection sectName="in progress" entries={inProgress} />
