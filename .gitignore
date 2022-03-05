@@ -24,3 +24,6 @@ yarn-error.log*
 
 # user-defined
 src/assets/star_assets/
+.firebaserc
+firebase.json
+.firebase/
