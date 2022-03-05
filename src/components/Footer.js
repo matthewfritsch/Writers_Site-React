@@ -1,9 +1,14 @@
-import { Center, Link, Text } from "@chakra-ui/react";
+import { Center, Divider, Flex, Link, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
     <>
-      <Center py={10}>
+      <Flex
+        py={10}
+        align="center"
+        flexDir={{ base: "column", md: "row" }}
+        justifyContent="center"
+      >
         <Link
           color="gray.600"
           href="https://matthewfritsch.com"
@@ -12,9 +17,14 @@ const Footer = () => {
         >
           Built by Matthew Fritsch to learn React JS
         </Link>
-        <Text color="gray.500" mx="0.5em">
+        <Text
+          color="gray.500"
+          mx="0.5em"
+          display={{ base: "none", md: "inline" }}
+        >
           |
         </Text>
+        <Divider my={{ base: 2, md: 0 }} w={{ base: 300, md: 0 }} />
         <Link
           color="gray.600"
           href="https://starcsu.com/"
@@ -23,7 +33,7 @@ const Footer = () => {
         >
           Made as a recreation of this site, by Star Su
         </Link>
-      </Center>
+      </Flex>
     </>
   );
 };
