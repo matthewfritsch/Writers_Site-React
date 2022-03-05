@@ -23,28 +23,29 @@ const Header = () => {
       <Flex justifyContent="flex-end">
         <IconButton my={4} icon={icon} onClick={toggleColorMode} pos="fixed" />
       </Flex>
-      <Center
+      <Flex
         pt={20}
         pb={10}
-        display="flex"
         alignItems="center"
         justifyContent="center"
+        flexDir={{ base: "column", md: "row" }}
       >
         <Image
-          height={400}
+          w={[300, 400]}
           src={welcomeImg}
           fallback="https://via.placeholder.com/390x600"
           mx={30}
+          my={[10, 0]}
           borderRadius={5}
         />
 
-        <Box borderLeft={20}>
+        <Flex flexDir="column" textAlign="center" borderLeft={20}>
           <Heading> hello, my name is harold </Heading>
           <Text letterSpacing={2} color="gray">
             stock image subject and internet icon
           </Text>
-        </Box>
-      </Center>
+        </Flex>
+      </Flex>
     </>
   );
 };
