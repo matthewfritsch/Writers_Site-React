@@ -1,11 +1,4 @@
-import {
-  Center,
-  Container,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-} from "@chakra-ui/react";
+import { Center, Grid, GridItem, Text } from "@chakra-ui/react";
 import PubItem from "./PubItem";
 
 const PubSection = ({ sectName, entries }) => {

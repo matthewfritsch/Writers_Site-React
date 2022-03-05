@@ -1,4 +1,4 @@
-import { Center, Container, Flex, Link, Text } from "@chakra-ui/react";
+import { Container, Flex, Link, Text } from "@chakra-ui/react";
 
 const ExperienceBox = ({ title, workName, workLink, timeframe }) => {
   const width = 560;

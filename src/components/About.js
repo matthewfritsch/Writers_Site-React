@@ -1,13 +1,4 @@
-import {
-  Box,
-  Center,
-  Container,
-  Flex,
-  Heading,
-  Image,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Center, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
 const About = () => {
   let aboutImg = require("../assets/harold/harold_about.jpg");

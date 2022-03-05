@@ -1,4 +1,4 @@
-import { Center, Container, Flex, Link, Text } from "@chakra-ui/react";
+import { Container, Flex, Link, Text } from "@chakra-ui/react";
 
 const PubItem = ({ title, titleLink, tech, techLink, addNote, bottomNote }) => {
   return (
