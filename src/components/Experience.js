@@ -1,5 +1,6 @@
 import {
   Center,
+  Flex,
   Heading,
   Tabs,
   TabList,
@@ -63,7 +64,7 @@ const futuExp = [
 ];
 
 const Experience = () => {
-  const tabSize = 240;
+  const tabWidth = [120, 160, 240];
   const tabListSize = 720;
 
   return (
@@ -72,11 +73,11 @@ const Experience = () => {
         <Heading>school/work experience</Heading>
       </Center>
       <Center fontFamily="Jost">
-        <Tabs defaultIndex={1}>
-          <TabList width={tabListSize}>
-            <Tab width={tabSize}>Past</Tab>
-            <Tab width={tabSize}>Current</Tab>
-            <Tab width={tabSize}>Future</Tab>
+        <Tabs align="center" isFitted defaultIndex={1}>
+          <TabList width={[360, 460, 600]}>
+            <Tab>Past</Tab>
+            <Tab>Current</Tab>
+            <Tab>Future</Tab>
           </TabList>
 
           <TabPanels minHeight={200}>
