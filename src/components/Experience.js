@@ -1,5 +1,4 @@
 import {
-  Box,
   Center,
   Heading,
   Tabs,
@@ -40,14 +39,15 @@ const currExp = [
   },
   {
     title: "learning ReactJS",
-    workName: "at my desk",
-    workLink: "reactjs.org/",
+    workName: "my desk",
+    workLink:
+      "smile.amazon.com/NSdirect-Has-Wide-Workstation-Tabletop-Home-Work-Finish-Wood-Board-Sturdy-Steel-Legs/dp/B081RFK5JM/",
     timeframe: "Feb 2022 - present",
   },
   {
     title: "learning Rust",
-    workName: "at my desk",
-    workLink: "www.rust-lang.org/",
+    workName: "from Jon Gjengset",
+    workLink: "rust-for-rustaceans.com/",
     timeframe: "Jan 2022 - present",
   },
 ];
@@ -63,10 +63,8 @@ const futuExp = [
 ];
 
 const Experience = () => {
-  const maxExpLen = Math.max(prevExp.length, currExp.length);
   const tabSize = 240;
   const tabListSize = 720;
-  const tabListHeight = 120;
 
   return (
     <>

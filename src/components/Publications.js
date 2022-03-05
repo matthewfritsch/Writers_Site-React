@@ -1,4 +1,4 @@
-import { Center, Heading, Spacer, Text } from "@chakra-ui/react";
+import { Center, Heading } from "@chakra-ui/react";
 
 import PubSection from "./PubSection";
 

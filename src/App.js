@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { ChakraProvider, Container, useColorModeValue } from "@chakra-ui/react";
+import { ChakraProvider, Container } from "@chakra-ui/react";
 
 import About from "./components/About";
 import Experience from "./components/Experience";
