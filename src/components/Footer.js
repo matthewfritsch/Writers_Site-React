@@ -12,7 +12,7 @@ const Footer = () => {
         >
           Built by Matthew Fritsch to learn React JS
         </Link>
-        <Text color="gray.500" mx={2}>
+        <Text color="gray.500" mx="0.5em">
           |
         </Text>
         <Link
