@@ -1,30 +1,27 @@
 import { Container, Flex, Link, Text } from "@chakra-ui/react";
 
 const ExperienceBox = ({ title, workName, workLink, timeframe }) => {
-  const width = 560;
-
   return !title || !workName || !workLink ? (
     <></>
   ) : (
-    <Container
-      w={width}
+    <Flex
+      w={[220, 460, 580]}
       borderRadius={8}
-      padding={3}
       border="2px"
-      marginBottom={1}
+      padding={3}
+      mb={1}
       borderColor="#749ECB"
-      justifyContent="center"
+      textAlign={["center", "left"]}
+      flexDir="column"
     >
-      <Flex>
-        <Text marginRight={2} textStyle="underline">
-          {title}
-        </Text>
+      <Flex flexDir={["column", "row"]}>
+        <Text marginRight={2}>{title}</Text>
         <Link color="blue.400" href={"http://" + workLink}>
           @{workName}
         </Link>
       </Flex>
       <Text>{timeframe}</Text>
-    </Container>
+    </Flex>
   );
 };
 
