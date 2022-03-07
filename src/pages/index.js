@@ -1,3 +1,4 @@
+import Admin from "./admin/Admin";
 import Home from "./home/Home";
 
-export default Home;
+export { Admin, Home };
