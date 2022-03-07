@@ -1,6 +1,4 @@
 import {
-  Box,
-  Center,
   Flex,
   Heading,
   IconButton,
@@ -12,7 +10,7 @@ import {
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 
 const Header = () => {
-  let welcomeImg = require("../assets/harold/harold_welcome.jpg");
+  let welcomeImg = require("../harold/harold_welcome.jpg");
 
   const { toggleColorMode } = useColorMode();
 

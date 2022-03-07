@@ -1,4 +1,4 @@
-import { Container, Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Text } from "@chakra-ui/react";
 
 const ExperienceBox = ({ title, workName, workLink, timeframe }) => {
   return !title || !workName || !workLink ? (

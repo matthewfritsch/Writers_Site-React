@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 const About = () => {
-  let aboutImg = require("../assets/harold/harold_about.jpg");
+  let aboutImg = require("../harold/harold_about.jpg");
 
   return (
     <Flex flexDir="column" align="center">

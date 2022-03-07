@@ -1,6 +1,5 @@
 import {
   Center,
-  Flex,
   Heading,
   Tabs,
   TabList,
@@ -64,9 +63,6 @@ const futuExp = [
 ];
 
 const Experience = () => {
-  const tabWidth = [120, 160, 240];
-  const tabListSize = 720;
-
   return (
     <>
       <Center mb={4}>
