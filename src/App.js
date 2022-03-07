@@ -1,22 +1,28 @@
-import { ChakraProvider, Container } from "@chakra-ui/react";
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Publications from "./components/Publications";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+
+import Home from "./pages";
 
 function App({ customTheme }) {
   return (
-    <ChakraProvider theme={customTheme}>
-      <Container maxW={4096}>
-        <Header />
-        <Experience />
-        <Publications />
-        <About />
-        <Footer />
-      </Container>
-    </ChakraProvider>
+    <Router>
+      <ChakraProvider theme={customTheme}>
+        <ColorModeScript
+          initialColorMode={customTheme.config.initialColorMode}
+        />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/admin" element={"Hey :)"} />
+          <Route path="*" element={<Navigate replace to="/" />} />
+        </Routes>
+      </ChakraProvider>
+    </Router>
   );
 }
 
